@@ -1,11 +1,17 @@
 package com.exam;
 
+import com.exam.model.Role;
+import com.exam.model.User;
+import com.exam.model.UserRole;
 import com.exam.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+import java.util.HashSet;
+import java.util.Set;
 
 
 @SpringBootApplication
@@ -24,7 +30,7 @@ public class Java5AssApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
+//
 //        System.out.println("starting code");
 //        User user = new User();
 //        user.setFirstName("Nguyen");
